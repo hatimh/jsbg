@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "jquery-2.2.0.js"> </script>
+    <script src = "application.js"> </script>
+  </head>
+  <body>
+    <div class = "container">
+      <h2>Welcome to JS Betting game</h2>
+      <button id = "start" onclick = 'startgame()'>start New game</button>
+      <br>
+      <br>    
+      <div id = "status" class = "inactive">
+        <p>Bankroll: $<span id = 'balance' ></span></p>
+        <label for "bet">Your Bet $ (5-10):</label><br>
+        <input id = "bet"></input>
+        <br>
+        <br>
+        <label for "answer">Your Guess (1-10):</label><br>
+        <input id = "answer" ></input>
+        <br>
+        <br>
+        <button id = "play" onclick = 'play()'>Play</button>
+      </div>    
+      <div id ='result'></div>
+    </div> 
+  </body>
+</html>
